@@ -2,6 +2,7 @@ package homework_shape;
 
 
 public class Shape {
+    //todo use Point/Vector2  class
     double ax, ay, az, bx, by, bz, cx, cy, cz; // The coordinates of the vertices of any shapes
     double Pi = 3.14159;
 
@@ -21,11 +22,12 @@ interface AreaMeasurable {
 interface VolumeMeasurable {
     double getVolume();
 }
-
+//todo Abstract class
 class PlaneShape extends Shape implements PerimeterMeasurable, AreaMeasurable {
 
     @Override
     public double getPerimeter() {
+        //todo no way
         return 0;
     }
 
@@ -162,6 +164,7 @@ class SpaceShape extends Shape implements AreaMeasurable, VolumeMeasurable {
 }
 
 class SquarePyramid extends SpaceShape {
+    //todo naming
     double base_width, pyramid_height;
 
     public SquarePyramid(double ax, double ay, double az, double base_width, double pyramid_height) {
