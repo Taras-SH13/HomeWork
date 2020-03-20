@@ -1,7 +1,6 @@
 package homework_shape;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
 public class Shape_Taste {
 
 
@@ -45,7 +44,7 @@ public class Shape_Taste {
         shapes.add(new Cuboid(12,333,45,65,234,56));
         shapes.add(new SquarePyramid(119,36,5,334,6456));
         shapes.add(new Cuboid(100,33,4455,688,2348,562));
-
+        //todo tests!
         for (Shape shape : shapes){
             System.out.println(shape.toString());
 
