@@ -6,10 +6,10 @@ public class Programm2 {
 
     public static void main(String[] args) {
         // объекты разных типов,реализующие интерфейс Comparabale
-        Integer item1 = 34;
+        Integer item1 = 100;
         Integer item2 = 76;
-        String item3 = "45555";
-        String item4 = "786";
+        String item3 = "4";
+        String item4 = "786jkkjhhkjh";
 
         // создаем список объектов тип Integer
         MyList2<Integer> integerList = new MyList2<>();
