@@ -39,18 +39,20 @@ public class Programm3 {
         System.out.println("Апельсинов в списке нет!");
 
         // Упражнение 3
-        AnyList anyList2 = new AnyList();
-        AnyList anyList3 = new AnyList();
-        compareTooList(anyList2, anyList3);
+
+        AnyList mylist = new AnyList();
+        compareTooList(mylist);
 
     }
 
-    public static void compareTooList(AnyList anyList2, AnyList anyList3) {
-
-
-        for (int i = 0; i < anyList2.listInt2.size(); i++) {
-            for (int j = 0; j < anyList3.listInt3.size(); j++) {
-                if (anyList2.listInt2.get(i).equals(anyList3.listInt3.get(j)) == true) {
+    public static void compareTooList(AnyList list) {
+        Collections.sort(list.listInt2);
+        System.out.println(list.listInt2);
+        Collections.sort(list.listInt3);
+        System.out.println(list.listInt3);
+        for (int i = 0; i < list.listInt2.size(); i++) {
+            for (int j = 0; j < list.listInt3.size(); j++) {
+                if (list.listInt2.get(i).equals(list.listInt3.get(j)) == true) {
                     System.out.println("Элемент " + i +
                             " первого списка равен элементу " + j + " второго списка.");
                 } else {
