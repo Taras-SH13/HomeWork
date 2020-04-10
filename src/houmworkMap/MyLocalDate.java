@@ -1,12 +1,12 @@
 package houmworkMap;
 
-public class LocalDate {
+public class MyLocalDate {
 
     int day;
     int month;
     int eyar;
 
-    public LocalDate(int day, int month, int eyar) {
+    public MyLocalDate(int day, int month, int eyar) {
         this.day = day;
         this.month = month;
         this.eyar = eyar;
