@@ -30,7 +30,7 @@ public class Programm4 {
 
         System.out.println(Arrays.asList(myBooks.listOffBook2));
 
-
+// HashMap в качестве ключей объекты класса String
 
         myBooks.listOffBook3.put("2016-08-16", "За рулем");
         myBooks.listOffBook3.put("2016-08-18", "ЧИП");
