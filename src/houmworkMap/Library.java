@@ -11,14 +11,20 @@ public class Library {
     HashMap<MyLocalDate, String> listOffBooks = new HashMap<MyLocalDate, String>();
     HashMap<LocalDate, String> listOffBook2 = new HashMap<LocalDate, String>();
     HashMap<String, String> listOffBook3 = new HashMap<String, String>();
-// ищем книгу в мапе
+
+    // ищем книгу в мапе
 public void serchBooks(){
     Scanner sc=new Scanner(System.in);
-    System.out.println("Введите дату в формате : год-месяц-день");
-    String dataSerch=sc.nextLine();
-    System.out.println(listOffBook3.get(dataSerch));
-
-
+    while (true) {
+        System.out.println("Введите дату в формате : год-месяц-день");
+        String dataSerch = sc.nextLine();
+        if (listOffBook3.containsKey(dataSerch)) {
+            System.out.println(listOffBook3.get(dataSerch));
+            return;
+        } else {
+            System.out.println("Такой книги нет! Попробуйте еще раз! ");
+        }
+    }
 }
 }
 
