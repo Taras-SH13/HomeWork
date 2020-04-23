@@ -1,6 +1,8 @@
 package houmworkMap;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class ProgrammPart2 {
 
@@ -19,6 +21,12 @@ public class ProgrammPart2 {
         report.booksList.put("Маугли",LocalDate.of(2020,5,04));
         report.booksList.put("Марсианин",LocalDate.of(2020,6,25));
         report.booksList.put("Рассказы о животных",LocalDate.of(2020,1,01));
+
+        System.out.println(Arrays.asList(report.booksList));
+        System.out.println(report.booksList.containsValue(LocalDate.of(2020,6,25)));
+
     }
+
+
 
 }
