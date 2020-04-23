@@ -26,6 +26,8 @@ public class Programm4 {
 
         myBooks.listOffBook2.put(specificDate, "Сказки");
         myBooks.listOffBook2.put(LocalDate.of(2017, Month.NOVEMBER, 30), "Журнал Мурзилка");
+        myBooks.listOffBook2.put(LocalDate.of(2017, Month.NOVEMBER, 30), "Журнал Чебураха");
+        myBooks.listOffBook2.put(LocalDate.of(2017, Month.NOVEMBER, 30), "Журнал Крокодил");
         myBooks.listOffBook2.put(LocalDate.of(2015, 10, 4), "Журнал Перец");
 
         System.out.println(Arrays.asList(myBooks.listOffBook2));
@@ -33,6 +35,8 @@ public class Programm4 {
       // HashMap в качестве ключей объекты класса String
 
         myBooks.listOffBook3.put("2016-08-16", "За рулем");
+        myBooks.listOffBook3.put("2016-08-16", "Сад и огород");
+        myBooks.listOffBook3.put("2016-08-16", "МАХИМ");
         myBooks.listOffBook3.put("2016-08-18", "ЧИП");
         myBooks.listOffBook3.put("2016-09-6", "Компьютерное обозрение");
 
